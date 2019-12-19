@@ -13,7 +13,7 @@ function Moneybox(accountNumber, balance) {
 			accountNumber = '' + accountNumber;
 
 			return '' + '0'.repeat(3 - accountNumber.length) + accountNumber;
-		}(accountNumber || 1));
+		})(accountNumber || 1);
 	this.balance = balance || 0;
 	this.transactions = [];
 }
